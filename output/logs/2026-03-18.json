@@ -1,0 +1,63 @@
+{
+  "date": "2026-03-18",
+  "event": {
+    "date": "2026-03-18",
+    "phase": "strait_partial_reopening",
+    "description": "重大地缘进展：伊朗宣布霍尔木兹海峡\"人道主义通航走廊\"正式开放。\n每日通行量约为封锁前的40%。不是完全通航，但恐慌大幅缓解。\n油价暴跌至$76（一天跌$6），仍高于危机前$71但趋势明确向下。\n港股跟随全球风险偏好回升。\n南下资金净流入转正。\n",
+    "policy_signal_strength": 0.6,
+    "geopolitical_risk": 0.2,
+    "event_shock_pct": 1.5
+  },
+  "market_state": {
+    "hsi_close": 25913.964999999997,
+    "daily_change_pct": 1.5,
+    "volume_hkd_billion": 200.0,
+    "sentiment": "bullish",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪转牛但地缘缓解可能短暂，我担心追高被套，先观望确认趋势再行动。",
+      "emotion": "anxiety",
+      "top_concern": "反弹可能结束导致我追高被套，跑输同行和LP赎回风险。",
+      "confidence": 0.6,
+      "date": "2026-03-18",
+      "agent": "对冲基金"
+    },
+    {
+      "date": "2026-03-18",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第3天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪看涨，政策信号中等，我已有90%仓位且浮盈，先观望确认趋势，避免追高被套。",
+      "emotion": "calm",
+      "top_concern": "政策信号不够强，可能回调导致浮盈回吐。",
+      "confidence": 0.7,
+      "date": "2026-03-18",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场涨幅1.5%，远未达到我的安全边际要求，保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场可能因短期情绪反弹而错失长期价值机会，但我必须坚持安全边际原则。",
+      "confidence": 0.95,
+      "date": "2026-03-18",
+      "agent": "价值投资者"
+    }
+  ]
+}

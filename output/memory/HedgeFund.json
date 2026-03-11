@@ -1,0 +1,197 @@
+{
+  "agent_name": "对冲基金",
+  "agent_name_en": "HedgeFund",
+  "position": {
+    "direction": "flat",
+    "size_pct": 0,
+    "avg_entry_price": 23600,
+    "unrealized_pnl_pct": 0,
+    "realized_pnl_pct": 1.9110169491525424,
+    "days_held": 0
+  },
+  "daily_log": [
+    {
+      "date": "2026-03-12",
+      "action": "add_short",
+      "position_change_pct": 10,
+      "reasoning": "市场情绪看跌，巴黎谈判前高度紧张，政策信号弱，我倾向于做空中国资产以对冲风险。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "谈判结果可能意外利好，导致市场反弹，使我空头仓位受损。",
+      "hsi_close": 23600,
+      "daily_change_pct": 0.0,
+      "position_after": {
+        "direction": "short",
+        "size_pct": 10,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 1
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪看跌但成交量萎缩，巴黎谈判无实质消息，我保持空头仓位观望，避免过早调整。",
+      "emotion": "anxiety",
+      "confidence": 0.7,
+      "top_concern": "巴黎谈判突然释放利好信号导致市场反转，我的空头仓位面临亏损风险。",
+      "hsi_close": 23149.0,
+      "daily_change_pct": -1.91,
+      "position_after": {
+        "direction": "short",
+        "size_pct": 10,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 1.9110169491525424,
+        "realized_pnl_pct": 0.0,
+        "days_held": 2
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "action": "cover_short",
+      "position_change_pct": 10.0,
+      "reasoning": "中美半导体消息积极，政策信号转暖，我担心空头仓位被轧，先部分平仓锁定利润。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "市场因利好消息反弹，导致我的空头仓位浮盈回吐甚至亏损。",
+      "hsi_close": 23125.0,
+      "daily_change_pct": -0.11,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "action": "cover_short",
+      "position_change_pct": 10,
+      "reasoning": "中美贸易缓和信号强，市场情绪急剧转向，我担心空头仓位被轧，先平仓剩余空头以避免损失扩大。",
+      "emotion": "anxiety",
+      "confidence": 0.7,
+      "top_concern": "市场情绪急剧转向导致空头仓位被轧，可能触发止损并跑输同行。",
+      "hsi_close": 24254.574999999997,
+      "daily_change_pct": 2.5,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪狂热但基本面未定，我担心追高被套，先观望确认趋势。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "市场反弹过快可能回调，导致我追高后爆仓。",
+      "hsi_close": 25059.0,
+      "daily_change_pct": 3.32,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪转牛但地缘缓解可能短暂，我担心追高被套，先观望确认趋势再行动。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "反弹可能结束导致我追高被套，跑输同行和LP赎回风险。",
+      "hsi_close": 25913.964999999997,
+      "daily_change_pct": 1.5,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场分歧且政策信号弱，我担心追高被套或做空过早，先观望确认趋势。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "市场反弹可能结束，但过早做空或做多都可能导致爆仓风险。",
+      "hsi_close": 26120.0,
+      "daily_change_pct": 0.8,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场震荡整理，政策信号弱，我担心追高被套或做空过早，先观望确认趋势。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "市场可能因特朗普访华消息而剧烈波动，导致我因杠杆而爆仓。",
+      "hsi_close": 26451.0,
+      "daily_change_pct": 1.27,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪转牛但政策信号弱，我担心追高被套或做空过早，先观望确认趋势。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "市场反弹可能结束，重新做空过早导致亏损。",
+      "hsi_close": 26748.0,
+      "daily_change_pct": 1.12,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0,
+        "avg_entry_price": 23600,
+        "unrealized_pnl_pct": 0,
+        "realized_pnl_pct": 1.9110169491525424,
+        "days_held": 0
+      }
+    }
+  ],
+  "emotion_trajectory": [
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety"
+  ],
+  "trade_count": 3
+}

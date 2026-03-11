@@ -1,0 +1,61 @@
+{
+  "date": "2026-03-21",
+  "event": {
+    "date": "2026-03-21",
+    "phase": "new_equilibrium",
+    "description": "本轮推演最后一天。\n市场寻找新的均衡点。\n关键问题：恒指能回到危机前的26630吗？还是会在一个更低的位置稳住？\n4月初特朗普访华成为下一个关键变量。\n油价$74，接近危机前水平。\n",
+    "policy_signal_strength": 0.15,
+    "geopolitical_risk": 0.15
+  },
+  "market_state": {
+    "hsi_close": 26748.0,
+    "daily_change_pct": 1.12,
+    "volume_hkd_billion": 173.0,
+    "sentiment": "bullish",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪转牛但政策信号弱，我担心追高被套或做空过早，先观望确认趋势。",
+      "emotion": "anxiety",
+      "top_concern": "市场反弹可能结束，重新做空过早导致亏损。",
+      "confidence": 0.6,
+      "date": "2026-03-21",
+      "agent": "对冲基金"
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "我严重低于基准，同行加配触发FOMO，政策信号中性但地缘风险可控，需分批回补以避免跑输基准。",
+      "emotion": "fomo",
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核和排名下滑。",
+      "confidence": 0.7,
+      "date": "2026-03-21",
+      "agent": "长线外资"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "我已有90%仓位且浮盈10%，市场情绪看涨但政策信号弱，先观望避免追高被套，等特朗普访华事件明朗。",
+      "emotion": "anxiety",
+      "top_concern": "政策信号弱可能导致市场回调，浮盈回吐。",
+      "confidence": 0.7,
+      "date": "2026-03-21",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "恒指跌幅仅13.3%，远未达到30-50%的安全边际要求，保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场可能不会跌到足够低的价格，导致我错过长期投资机会。",
+      "confidence": 0.95,
+      "date": "2026-03-21",
+      "agent": "价值投资者"
+    }
+  ]
+}

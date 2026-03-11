@@ -1,0 +1,62 @@
+{
+  "date": "2026-03-17",
+  "event": {
+    "date": "2026-03-17",
+    "phase": "post_breakthrough_rally",
+    "description": "周一开盘。周末消化巴黎谈判结果。\n各大投行纷纷上调中国GDP预测和港股目标价：\n- 高盛上调恒指目标至28000（此前26000）\n- 摩根士丹利将中国从\"减持\"上调至\"标配\"\n全球资金开始回流新兴市场。\n但也有谨慎声音：90天冻结只是缓冲期，不是永久和平。\n",
+    "policy_signal_strength": 0.7,
+    "geopolitical_risk": 0.3
+  },
+  "market_state": {
+    "hsi_close": 25059.0,
+    "daily_change_pct": 3.32,
+    "volume_hkd_billion": 259.0,
+    "sentiment": "euphoric",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪狂热但基本面未定，我担心追高被套，先观望确认趋势。",
+      "emotion": "anxiety",
+      "top_concern": "市场反弹过快可能回调，导致我追高后爆仓。",
+      "confidence": 0.6,
+      "date": "2026-03-17",
+      "agent": "对冲基金"
+    },
+    {
+      "date": "2026-03-17",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第2天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "市场情绪高涨，投行上调预测，政策信号强，我担心错过行情，加仓互联网龙头和高股息股。",
+      "emotion": "fomo",
+      "top_concern": "政策不兑现或市场回调导致被套。",
+      "confidence": 0.75,
+      "date": "2026-03-17",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场涨幅3.32%，远未达到我的安全边际要求，保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场情绪狂热，可能导致我因FOMO而错误买入，但我会坚持基于内在价值和安全边际的原则。",
+      "confidence": 0.95,
+      "date": "2026-03-17",
+      "agent": "价值投资者"
+    }
+  ]
+}

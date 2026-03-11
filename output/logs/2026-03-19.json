@@ -1,0 +1,61 @@
+{
+  "date": "2026-03-19",
+  "event": {
+    "date": "2026-03-19",
+    "phase": "reality_check",
+    "description": "连涨后的第一个冷静日。\n获利盘开始涌出——从底部反弹的资金想锁定利润。\n美国国会部分议员质疑巴黎协议\"对中国让步太多\"。\n特朗普推特：\"Great deal, but we could have done better!\"\n市场出现分歧：是继续追还是先跑？\n",
+    "policy_signal_strength": 0.3,
+    "geopolitical_risk": 0.25
+  },
+  "market_state": {
+    "hsi_close": 26120.0,
+    "daily_change_pct": 0.8,
+    "volume_hkd_billion": 143.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场分歧且政策信号弱，我担心追高被套或做空过早，先观望确认趋势。",
+      "emotion": "anxiety",
+      "top_concern": "市场反弹可能结束，但过早做空或做多都可能导致爆仓风险。",
+      "confidence": 0.6,
+      "date": "2026-03-19",
+      "agent": "对冲基金"
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "我严重低于基准，同行加配触发FOMO，政策信号中性但地缘风险可控，需分批回补以避免跑输。",
+      "emotion": "fomo",
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核排名下滑。",
+      "confidence": 0.7,
+      "date": "2026-03-19",
+      "agent": "长线外资"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场冷静日，获利盘涌出，政策信号弱，我已有90%仓位且浮盈7.7%，先观望避免追高被套，等待更明确信号。",
+      "emotion": "anxiety",
+      "top_concern": "政策不兑现导致市场回调，浮盈回吐。",
+      "confidence": 0.65,
+      "date": "2026-03-19",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场跌幅仅10.7%，远未达到我的安全边际要求（30-50%折扣），保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "看错了公司的基本面，但当前无持仓，主要担心错过真正的好机会。",
+      "confidence": 0.95,
+      "date": "2026-03-19",
+      "agent": "价值投资者"
+    }
+  ]
+}

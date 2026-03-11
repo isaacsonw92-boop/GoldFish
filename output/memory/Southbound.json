@@ -1,0 +1,197 @@
+{
+  "agent_name": "南下资金",
+  "agent_name_en": "Southbound",
+  "position": {
+    "direction": "long",
+    "size_pct": 90,
+    "avg_entry_price": 24056.81111111111,
+    "unrealized_pnl_pct": 11.18680641610854,
+    "realized_pnl_pct": 0.0,
+    "days_held": 7
+  },
+  "daily_log": [
+    {
+      "date": "2026-03-12",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪熊市且政策信号弱，我担心政策不兑现，先观望等待更明确信号。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "政策不兑现导致市场进一步下跌",
+      "hsi_close": 23600,
+      "daily_change_pct": 0.0,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0.0,
+        "avg_entry_price": 0.0,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪熊市，政策信号弱，我担心政策不兑现，先观望等待更明确信号，避免追跌。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "政策不兑现导致市场进一步下跌，错过抄底机会。",
+      "hsi_close": 23149.0,
+      "daily_change_pct": -1.91,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0.0,
+        "avg_entry_price": 0.0,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "action": "buy",
+      "position_change_pct": 30,
+      "reasoning": "市场对中美半导体消息反应积极，政策信号转强，我担心错过行情，先买入互联网龙头和高股息股票。",
+      "emotion": "fomo",
+      "confidence": 0.7,
+      "top_concern": "政策不兑现导致市场回调",
+      "hsi_close": 23125.0,
+      "daily_change_pct": -0.11,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 30,
+        "avg_entry_price": 23125.0,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 1
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "action": "buy",
+      "position_change_pct": 40,
+      "reasoning": "中美贸易缓和利好互联网龙头，政策信号强，我担心错过行情，分批建仓互联网和高股息股票。",
+      "emotion": "fomo",
+      "confidence": 0.8,
+      "top_concern": "政策不兑现或市场回调过快被套",
+      "hsi_close": 24254.574999999997,
+      "daily_change_pct": 2.5,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 70,
+        "avg_entry_price": 23770.47142857143,
+        "unrealized_pnl_pct": 2.0365753909562323,
+        "realized_pnl_pct": 0.0,
+        "days_held": 2
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "市场情绪高涨，投行上调预测，政策信号强，我担心错过行情，加仓互联网龙头和高股息股。",
+      "emotion": "fomo",
+      "confidence": 0.75,
+      "top_concern": "政策不兑现或市场回调导致被套。",
+      "hsi_close": 25059.0,
+      "daily_change_pct": 3.32,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 90,
+        "avg_entry_price": 24056.81111111111,
+        "unrealized_pnl_pct": 4.1659257507575855,
+        "realized_pnl_pct": 0.0,
+        "days_held": 3
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪看涨，政策信号中等，我已有90%仓位且浮盈，先观望确认趋势，避免追高被套。",
+      "emotion": "calm",
+      "confidence": 0.7,
+      "top_concern": "政策信号不够强，可能回调导致浮盈回吐。",
+      "hsi_close": 25913.964999999997,
+      "daily_change_pct": 1.5,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 90,
+        "avg_entry_price": 24056.81111111111,
+        "unrealized_pnl_pct": 7.719867277135179,
+        "realized_pnl_pct": 0.0,
+        "days_held": 4
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场冷静日，获利盘涌出，政策信号弱，我已有90%仓位且浮盈7.7%，先观望避免追高被套，等待更明确信号。",
+      "emotion": "anxiety",
+      "confidence": 0.65,
+      "top_concern": "政策不兑现导致市场回调，浮盈回吐。",
+      "hsi_close": 26120.0,
+      "daily_change_pct": 0.8,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 90,
+        "avg_entry_price": 24056.81111111111,
+        "unrealized_pnl_pct": 8.576319111288884,
+        "realized_pnl_pct": 0.0,
+        "days_held": 5
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场震荡整理，政策信号弱，我已有90%仓位且浮盈8.6%，先观望避免追高被套，等待下一个催化剂。",
+      "emotion": "anxiety",
+      "confidence": 0.7,
+      "top_concern": "政策不兑现导致市场回调，错过行情或浮盈回吐。",
+      "hsi_close": 26451.0,
+      "daily_change_pct": 1.27,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 90,
+        "avg_entry_price": 24056.81111111111,
+        "unrealized_pnl_pct": 9.952228821313257,
+        "realized_pnl_pct": 0.0,
+        "days_held": 6
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "我已有90%仓位且浮盈10%，市场情绪看涨但政策信号弱，先观望避免追高被套，等特朗普访华事件明朗。",
+      "emotion": "anxiety",
+      "confidence": 0.7,
+      "top_concern": "政策信号弱可能导致市场回调，浮盈回吐。",
+      "hsi_close": 26748.0,
+      "daily_change_pct": 1.12,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 90,
+        "avg_entry_price": 24056.81111111111,
+        "unrealized_pnl_pct": 11.18680641610854,
+        "realized_pnl_pct": 0.0,
+        "days_held": 7
+      }
+    }
+  ],
+  "emotion_trajectory": [
+    "anxiety",
+    "anxiety",
+    "fomo",
+    "fomo",
+    "fomo",
+    "calm",
+    "anxiety",
+    "anxiety",
+    "anxiety"
+  ],
+  "trade_count": 3
+}

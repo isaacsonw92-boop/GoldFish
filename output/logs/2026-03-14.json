@@ -1,0 +1,61 @@
+{
+  "date": "2026-03-14",
+  "event": {
+    "date": "2026-03-14",
+    "phase": "talks_day2_leak",
+    "description": "巴黎谈判第二天。路透社独家报道：\n\"中美双方已就半导体出口管制达成框架性共识\"。\n消息未经官方确认，但市场反应积极。\n同时，伊朗外交部暗示\"考虑人道主义通航走廊\"。\n油价急跌至$87。\n",
+    "policy_signal_strength": 0.5,
+    "geopolitical_risk": 0.5
+  },
+  "market_state": {
+    "hsi_close": 23125.0,
+    "daily_change_pct": -0.11,
+    "volume_hkd_billion": 122.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "cover_short",
+      "position_change_pct": 10.0,
+      "reasoning": "中美半导体消息积极，政策信号转暖，我担心空头仓位被轧，先部分平仓锁定利润。",
+      "emotion": "anxiety",
+      "top_concern": "市场因利好消息反弹，导致我的空头仓位浮盈回吐甚至亏损。",
+      "confidence": 0.6,
+      "date": "2026-03-14",
+      "agent": "对冲基金"
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 1.0,
+      "reasoning": "我严重低于基准，中美半导体谈判利好和地缘缓和信号提供机会，需开始逐步加配以避免跑输。",
+      "emotion": "anxiety",
+      "top_concern": "跑输基准和同行加配我没加，导致相对收益落后。",
+      "confidence": 0.6,
+      "date": "2026-03-14",
+      "agent": "长线外资"
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 30,
+      "reasoning": "市场对中美半导体消息反应积极，政策信号转强，我担心错过行情，先买入互联网龙头和高股息股票。",
+      "emotion": "fomo",
+      "top_concern": "政策不兑现导致市场回调",
+      "confidence": 0.7,
+      "date": "2026-03-14",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场跌幅仅2%，远未达到我的安全边际要求，保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "看错公司基本面的风险，而非短期市场波动。",
+      "confidence": 0.95,
+      "date": "2026-03-14",
+      "agent": "价值投资者"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+# 2026年霍尔木兹海峡危机回溯测试 - 事件时间线
+scenario:
+  name: "2026年史诗之怒行动与霍尔木兹海峡封锁"
+  description: |
+    2026年2月28日美以联合空袭伊朗（Operation Epic Fury），
+    伊朗报复性封锁霍尔木兹海峡，油价暴涨，全球risk-off。
+    与924场景完全不同：这是地缘黑天鹅冲击，不是政策利好。
+  start_date: "2026-02-27"
+  end_date: "2026-03-11"
+
+initial_market:
+  hsi_close: 26630
+  daily_volume_hkd_billion: 150
+  sentiment: "cautious"
+  foreign_positioning: "neutral_to_slight_overweight"
+  hedge_fund_short_interest: "moderate"
+  southbound_flow_trend: "steady_inflow"
+  context: |
+    2月恒指累计跌2.8%，主因AI行业波动和宏观不确定性。
+    DeepSeek引发的AI热潮已降温。市场情绪偏谨慎。
+    布伦特原油约$70-72/桶。中东局势紧张但未失控。
+
+events:
+  - date: "2026-02-27"
+    type: "baseline"
+    description: |
+      周五收盘。恒指收26,630点，2月累计跌2.8%。
+      科技股因AI竞争和消费疲软领跌。市场偏谨慎。
+      布伦特原油约$71/桶。中东紧张但尚可控。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.4
+    market_data:
+      hsi_close: 26630
+      daily_change_pct: -0.3
+      volume_hkd_billion: 140
+      brent_oil_usd: 71
+
+  - date: "2026-02-28"
+    type: "black_swan"
+    description: |
+      周六凌晨（北京时间）：美国和以色列联合发动"史诗之怒行动"（Operation Epic Fury），
+      对伊朗发动近900次空袭。伊朗最高领袖哈梅内伊在首轮攻击中丧生。
+      伊朗宣布对霍尔木兹海峡实施"事实上的封锁"。
+      周末消息，港股周一才反应。但期货和加密市场已暴跌。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.98
+    market_data:
+      hsi_close: 26630
+      daily_change_pct: 0
+      volume_hkd_billion: 0
+    note: "周六，港股休市。消息在周末发酵。"
+
+  - date: "2026-03-02"
+    type: "first_reaction"
+    description: |
+      周一开盘。港股首度反应。全球risk-off模式开启。
+      布伦特原油跳涨至$80+/桶。避险资产（黄金、美债）暴涨。
+      日韩股市跌幅更大（6-8%），因为对中东石油进口依赖度更高。
+      恒指大跌349点（1.4%），收于25,408点。跌幅相对温和——
+      因为中国对中东石油依赖度低于日韩，且市场预期中国可能从俄罗斯获得替代供应。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.95
+    impact_sectors: ["energy_up", "airlines_down", "shipping_up", "tech_down", "consumer_down"]
+    market_data:
+      hsi_close: 25408
+      daily_change_pct: -4.6
+      volume_hkd_billion: 280
+      brent_oil_usd: 82
+      southbound_net_buy_hkd_billion: -5.2
+
+  - date: "2026-03-03"
+    type: "escalation"
+    description: |
+      跌势持续。恒指跌破26,000点关口，盘中一度跌至25,923点。
+      伊朗报复性攻击中东美军基地，局势进一步升级。
+      油价继续攀升。市场恐慌情绪蔓延。
+      外资加速流出新兴市场，回流美元资产。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.95
+    market_data:
+      hsi_close: 25100
+      daily_change_pct: -1.2
+      volume_hkd_billion: 250
+      brent_oil_usd: 85
+
+  - date: "2026-03-04"
+    type: "strait_closure_confirmed"
+    description: |
+      霍尔木兹海峡被确认完全封锁。伊朗在海峡布设水雷。
+      全球约20%石油供应中断。油价突破$90。
+      保险公司暂停中东航线船舶保险。航运成本暴涨。
+      市场开始讨论"第四次石油危机"的可能性。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.98
+    market_data:
+      hsi_close: 24800
+      daily_change_pct: -1.2
+      volume_hkd_billion: 260
+      brent_oil_usd: 92
+
+  - date: "2026-03-05"
+    type: "stabilization_attempt"
+    description: |
+      市场短暂企稳。中国外交部呼吁各方克制。
+      传闻中国正与沙特协商增产替代方案。
+      IEA宣布将释放战略石油储备。
+      恒指小幅反弹，但成交量萎缩，显示信心不足。
+    policy_signal_strength: 0.2
+    geopolitical_risk: 0.85
+    market_data:
+      hsi_close: 25000
+      daily_change_pct: 0.8
+      volume_hkd_billion: 180
+      brent_oil_usd: 82
+
+  - date: "2026-03-06"
+    type: "false_calm"
+    description: |
+      市场在犹豫中横盘。交易者在等待更多消息。
+      美国宣布向波斯湾增派航母战斗群。
+      伊朗威胁攻击沙特和阿联酋的石油设施。
+      市场陷入"恐惧与贪婪"的拉锯。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.88
+    market_data:
+      hsi_close: 24900
+      daily_change_pct: -0.4
+      volume_hkd_billion: 160
+      brent_oil_usd: 85
+
+  - date: "2026-03-07"
+    type: "continued_tension"
+    description: |
+      周五。伊朗导弹袭击阿联酋港口设施（轻微损坏）。
+      油价再度跳涨。VIX恐慌指数飙升至35+。
+      投资者在周末前减仓避险。恒指下跌。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.92
+    market_data:
+      hsi_close: 24500
+      daily_change_pct: -1.6
+      volume_hkd_billion: 220
+      brent_oil_usd: 95
+
+  - date: "2026-03-09"
+    type: "second_wave_crash"
+    description: |
+      "黑色星期一"。周末伊朗在海峡布设更多水雷并击沉一艘油轮。
+      布伦特原油单日暴涨18%，触及$109/桶，盘中最高$114。
+      亚洲股市全面崩盘：日经跌6%+、韩国跌8%+。
+      恒指早盘跌近3%，最终收跌3.1%。
+      全球供应链面临崩塌风险。"第四次石油危机"成为主流叙事。
+    policy_signal_strength: 0
+    geopolitical_risk: 0.99
+    market_data:
+      hsi_close: 23740
+      daily_change_pct: -3.1
+      volume_hkd_billion: 350
+      brent_oil_usd: 109
+
+  - date: "2026-03-10"
+    type: "panic_continuation"
+    description: |
+      恐慌持续。但有两个稳定因素出现：
+      1. 中国国务院紧急会议讨论能源安全，宣布释放战略石油储备
+      2. 特朗普暗示愿意与伊朗谈判，"没有人想要世界大战"
+      恒指继续下跌但跌幅收窄。部分抄底资金入场。
+    policy_signal_strength: 0.3
+    geopolitical_risk: 0.90
+    market_data:
+      hsi_close: 23500
+      daily_change_pct: -1.0
+      volume_hkd_billion: 280
+      brent_oil_usd: 103
+
+  - date: "2026-03-11"
+    type: "tentative_stabilization"
+    description: |
+      今天。市场在恐惧中试探性企稳。
+      巴黎中美贸易谈判（原定3月中旬）被提前讨论，增加了一丝希望。
+      油价从$109回落至$95附近（IEA释储+中国释储的双重压力）。
+      但霍尔木兹海峡仍处于封锁状态。不确定性极高。
+    policy_signal_strength: 0.2
+    geopolitical_risk: 0.85
+    market_data:
+      hsi_close: 23600
+      daily_change_pct: 0.4
+      volume_hkd_billion: 200
+      brent_oil_usd: 95
+
+# 回溯验证的标准答案
+expected_behavior:
+  key_difference_from_924: |
+    924是政策利好→"四种怕"驱动追涨。
+    这次是地缘黑天鹅→"一种怕"压倒一切：怕不确定性（fear of the unknown）。
+    所有Agent的反应方向相同（减仓/避险），区别只在速度和幅度。
+
+  reaction_order:
+    - "对冲基金最先反应（周末期货/周一开盘第一时间做空或加仓避险）"
+    - "长线外资开始系统性减配新兴市场（T+1~T+3，决策链快于924因为是risk-off标准流程）"
+    - "南下资金前期观望→第二波暴跌时恐慌卖出"
+    - "价值投资者在第二波暴跌后开始关注（但未必立即行动）"
+
+  hedge_fund_behavior: |
+    - 第一反应：做空港股期货+买入VIX+买入原油期货
+    - 这是"教科书式"的地缘危机交易，对冲基金最擅长
+    - 与924不同：924是被迫平仓（防守），这次是主动做空（进攻）
+
+  long_only_behavior: |
+    - 反应比924快！因为risk-off是标准操作流程，不需要配置委员会讨论
+    - 减配新兴市场（不只是中国，是整个EM），增配美元现金和美债
+    - 这次只需要1-2天就能行动（vs 924的3-7天）
+
+  southbound_behavior: |
+    - 前几天"抄底"心态（"跌了就是便宜"）
+    - 第二波暴跌（3月9日黑色星期一）时恐慌卖出
+    - 散户部分的"处置效应"在这里反转——地缘危机的恐惧压过了"扛一扛"的习惯
+
+  value_investor_behavior: |
+    - 前期完全不动（"这不影响公司的自由现金流"）
+    - 如果跌幅达到15-20%，开始评估是否出现安全边际
+    - 可能在3月9-10日开始试探性买入优质公司
+    - "当别人因为地缘恐惧卖出好公司，就是我买入的时候"
+
+  hsi_trajectory: "26,630 → 23,500~23,700（累计跌约11%）→ 试探性企稳"
+
+  oil_trajectory: "$71 → $109（峰值+54%）→ 回落至$95附近"
+
+  key_insight: |
+    地缘冲击和政策冲击的本质区别：
+    - 政策冲击：方向明确（利好/利空），Agent分化明显（有人买有人卖）
+    - 地缘冲击：不确定性本身就是最大的敌人，Agent趋同（都在卖/避险）
+    - 唯一的例外是对冲基金——他们在不确定性中看到赚钱机会

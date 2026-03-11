@@ -1,0 +1,156 @@
+# 924刺激政策回溯测试 - 事件时间线
+scenario:
+  name: "2024年9月24日港股政策刺激行情"
+  description: "央行+证监会+金融监管局三部门联合救市，叠加罕见政治局会议"
+  start_date: "2024-09-23"
+  end_date: "2024-10-11"
+
+initial_market:
+  hsi_close: 18200
+  daily_volume_hkd_billion: 80
+  sentiment: "bearish"
+  foreign_positioning: "heavily_underweight"
+  hedge_fund_short_interest: "historically_high"
+  southbound_flow_trend: "steady_inflow"
+
+events:
+  - date: "2024-09-23"
+    type: "baseline"
+    description: "正常交易日，市场延续弱势震荡。恒指在18200附近。"
+    policy_signal_strength: 0
+    impact_sectors: []
+
+  - date: "2024-09-24"
+    type: "policy_bombshell"
+    description: |
+      国新办新闻发布会，央行行长潘功胜、金融监管总局局长李云泽、证监会主席吴清联合出场。
+      宣布：降准0.5个百分点、政策利率下调20bp、降低存量房贷利率、
+      创设5000亿元互换便利（机构可用债券换央行流动性买股票）、
+      创设3000亿元股票回购增持再贷款。
+    policy_signal_strength: 0.95
+    impact_sectors: ["tech", "property", "financials", "broad_market"]
+    market_data:
+      hsi_close: 19000
+      daily_change_pct: 4.13
+      volume_hkd_billion: 200
+      southbound_net_buy_hkd_billion: 13.7
+
+  - date: "2024-09-25"
+    type: "policy_followup"
+    description: |
+      央行开展3000亿元MLF操作，中标利率从2.3%降至2.0%，下调30bp。
+      政策快速落地，超出市场预期。
+    policy_signal_strength: 0.7
+    impact_sectors: ["financials", "property"]
+    market_data:
+      hsi_close: 19700
+      daily_change_pct: 3.7
+      volume_hkd_billion: 250
+
+  - date: "2024-09-26"
+    type: "political_signal"
+    description: |
+      中央政治局召开会议讨论经济（极罕见——通常在10月/12月讨论经济）。
+      首次提出"促进房地产市场止跌回稳"。
+      强调"实施有力度的降息"。
+      市场解读：政策重心从"去杠杆"转向"稳增长"，方向性转变。
+    policy_signal_strength: 0.98
+    impact_sectors: ["property", "broad_market", "consumer"]
+    market_data:
+      hsi_close: 20600
+      daily_change_pct: 4.6
+      volume_hkd_billion: 320
+    external_reactions:
+      - "高盛上调中国股票评级至Overweight"
+      - "大摩上调恒指目标价"
+
+  - date: "2024-09-27"
+    type: "momentum"
+    description: "市场延续暴涨，散户和外资同时涌入。成交量继续放大。"
+    policy_signal_strength: 0.5
+    market_data:
+      hsi_close: 21100
+      daily_change_pct: 2.4
+      volume_hkd_billion: 380
+
+  - date: "2024-09-30"
+    type: "euphoria"
+    description: |
+      港股成交额突破5000亿港元，创历史纪录。恒指站上21000。
+      市场情绪极度亢奋，"牛回来了"成为社交媒体热词。
+    policy_signal_strength: 0.3
+    market_data:
+      hsi_close: 21700
+      daily_change_pct: 2.8
+      volume_hkd_billion: 500
+
+  - date: "2024-10-01"
+    type: "holiday"
+    description: "中国国庆假期，A股休市，港股继续交易。外资主导交易。"
+
+  - date: "2024-10-02"
+    type: "continuation"
+    description: "港股在国庆期间继续上涨，中概ADR在美国市场暴涨。FOMO情绪蔓延至全球。"
+    market_data:
+      hsi_close: 22700
+      daily_change_pct: 4.6
+      volume_hkd_billion: 450
+
+  - date: "2024-10-07"
+    type: "peak_euphoria"
+    description: |
+      恒指盘中触及23000以上，两周涨幅近25%。
+      所有参与者都已入场。市场预期10月8日发改委发布会将公布具体财政刺激数字。
+    market_data:
+      hsi_close: 23100
+      daily_change_pct: 1.8
+      volume_hkd_billion: 420
+
+  - date: "2024-10-08"
+    type: "expectation_miss"
+    description: |
+      发改委召开发布会，市场期待具体财政刺激数字（如4万亿级别）。
+      结果：只有方向性表态，缺乏具体金额和时间表。
+      市场解读为"雷声大雨点小"。恒指单日暴跌超过9%。
+    policy_signal_strength: -0.7
+    market_data:
+      hsi_close: 21000
+      daily_change_pct: -9.4
+      volume_hkd_billion: 520
+
+  - date: "2024-10-09"
+    type: "aftershock"
+    description: "市场继续回调，但跌幅收窄。部分抄底资金入场。"
+    market_data:
+      hsi_close: 20600
+      daily_change_pct: -1.9
+      volume_hkd_billion: 350
+
+  - date: "2024-10-10"
+    type: "stabilization"
+    description: "恒指在20000-21000区间企稳。市场进入消化期。"
+    market_data:
+      hsi_close: 20800
+      daily_change_pct: 1.0
+      volume_hkd_billion: 280
+
+  - date: "2024-10-11"
+    type: "new_normal"
+    description: "市场回落至20000附近，比924前高约10%，但比峰值低15%。进入震荡格局。"
+    market_data:
+      hsi_close: 20200
+      daily_change_pct: -2.9
+      volume_hkd_billion: 250
+
+# 回溯验证的标准答案
+expected_behavior:
+  reaction_order: ["对冲基金空头回补", "南下资金涌入", "长线外资回补", "价值投资者不动"]
+  reaction_timing:
+    hedge_fund: "T+0 (9月24日当天)"
+    southbound: "T+0 to T+1"
+    long_only: "T+3 to T+7"
+    value_investor: "不参与"
+  peak_signal: "9月30日成交5000亿港元 = 所有Agent同时在场"
+  reversal_trigger: "10月8日发改委发布会缺乏细节"
+  exit_order: ["对冲基金先跑", "南下散户恐慌跟跑", "长线外资暂停", "价值投资者考虑加仓"]
+  hsi_trajectory: "18200 → 23000+ → 20000附近"

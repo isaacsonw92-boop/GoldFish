@@ -1,0 +1,61 @@
+{
+  "date": "2026-03-20",
+  "event": {
+    "date": "2026-03-20",
+    "phase": "consolidation",
+    "description": "市场进入震荡整理。\n油价稳定在$75附近。海峡通航量提升至50%。\n市场等待3月31日特朗普访华的进一步消息。\n成交量回落，波动率下降。\n进入\"谈判利好已price in，等下一个催化剂\"的状态。\n",
+    "policy_signal_strength": 0.2,
+    "geopolitical_risk": 0.2
+  },
+  "market_state": {
+    "hsi_close": 26451.0,
+    "daily_change_pct": 1.27,
+    "volume_hkd_billion": 179.0,
+    "sentiment": "bullish",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场震荡整理，政策信号弱，我担心追高被套或做空过早，先观望确认趋势。",
+      "emotion": "anxiety",
+      "top_concern": "市场可能因特朗普访华消息而剧烈波动，导致我因杠杆而爆仓。",
+      "confidence": 0.6,
+      "date": "2026-03-20",
+      "agent": "对冲基金"
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "我严重低于基准，同行加配触发FOMO，政策信号中性但地缘风险可控，需分批回补以避免跑输基准。",
+      "emotion": "fomo",
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核和排名下滑。",
+      "confidence": 0.7,
+      "date": "2026-03-20",
+      "agent": "长线外资"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场震荡整理，政策信号弱，我已有90%仓位且浮盈8.6%，先观望避免追高被套，等待下一个催化剂。",
+      "emotion": "anxiety",
+      "top_concern": "政策不兑现导致市场回调，错过行情或浮盈回吐。",
+      "confidence": 0.7,
+      "date": "2026-03-20",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场跌幅仅12.1%，远未达到30-50%的安全边际要求，保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场可能不会跌到足够深的折扣，导致错过长期投资机会。",
+      "confidence": 0.95,
+      "date": "2026-03-20",
+      "agent": "价值投资者"
+    }
+  ]
+}

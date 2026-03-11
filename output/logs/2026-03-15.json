@@ -1,0 +1,63 @@
+{
+  "date": "2026-03-15",
+  "event": {
+    "date": "2026-03-15",
+    "phase": "breakthrough",
+    "description": "巴黎谈判第三天，联合声明发布：\n1. 中美同意90天关税冻结期（不新增关税）\n2. 半导体出口管制\"分级豁免\"框架\n3. 双方同意在4月初特朗普访华时签署正式协议\n这是2018年贸易战以来最大的实质性缓和。\n油价跌至$82。市场情绪急剧转向。\n",
+    "policy_signal_strength": 0.85,
+    "geopolitical_risk": 0.35,
+    "event_shock_pct": 2.5
+  },
+  "market_state": {
+    "hsi_close": 24254.574999999997,
+    "daily_change_pct": 2.5,
+    "volume_hkd_billion": 218.0,
+    "sentiment": "bullish",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "elevated",
+    "southbound_flow_trend": "net_outflow"
+  },
+  "decisions": [
+    {
+      "action": "cover_short",
+      "position_change_pct": 10,
+      "reasoning": "中美贸易缓和信号强，市场情绪急剧转向，我担心空头仓位被轧，先平仓剩余空头以避免损失扩大。",
+      "emotion": "anxiety",
+      "top_concern": "市场情绪急剧转向导致空头仓位被轧，可能触发止损并跑输同行。",
+      "confidence": 0.7,
+      "date": "2026-03-15",
+      "agent": "对冲基金"
+    },
+    {
+      "date": "2026-03-15",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第1天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 40,
+      "reasoning": "中美贸易缓和利好互联网龙头，政策信号强，我担心错过行情，分批建仓互联网和高股息股票。",
+      "emotion": "fomo",
+      "top_concern": "政策不兑现或市场回调过快被套",
+      "confidence": 0.8,
+      "date": "2026-03-15",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场涨幅2.5%，远未达到我的安全边际要求，保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场情绪转向可能导致价格虚高，错过真正的安全边际机会。",
+      "confidence": 0.95,
+      "date": "2026-03-15",
+      "agent": "价值投资者"
+    }
+  ]
+}

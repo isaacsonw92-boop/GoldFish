@@ -1,0 +1,124 @@
+# 港股沙盘推演：巴黎谈判突破场景
+# 纯推演模式 —— 没有预设价格，全部由Agent行为生成
+# 背景：霍尔木兹危机后，市场在23600企稳，等待巴黎谈判结果
+
+scenario:
+  name: "巴黎谈判突破 — 危机缓和推演"
+  description: |
+    霍尔木兹海峡封锁后第11天。恒指从26630跌至23600（-11.4%）。
+    市场处于恐惧与希望的拉锯中。
+    本场景推演：如果3月15日巴黎中美贸易谈判取得实质性进展，
+    叠加3月18日海峡部分通航，市场如何反应？
+  type: forecast
+
+initial_market:
+  hsi_close: 23600
+  daily_volume_hkd_billion: 180
+  sentiment: bearish
+  foreign_positioning: heavily_underweight
+  hedge_fund_short_interest: elevated
+  southbound_flow_trend: net_outflow
+  base_volatility_pct: 1.5
+
+timeline:
+  - date: "2026-03-12"
+    phase: pre_talks_anxiety
+    description: |
+      巴黎谈判前最后一个交易日。市场高度紧张。
+      油价$95，较峰值$109回落但仍远高于危机前$71。
+      传闻：中美双方在关税问题上仍有巨大分歧。
+      但也有消息称伊朗私下愿意"有条件通航"。
+      市场在恐惧和希望之间摇摆。
+    policy_signal_strength: 0.1
+    geopolitical_risk: 0.75
+
+  - date: "2026-03-13"
+    phase: talks_day1
+    description: |
+      巴黎谈判第一天。无实质消息传出。
+      但双方同意"继续谈"本身就是积极信号。
+      油价微跌至$93。市场观望情绪浓厚。
+      成交量萎缩——大家都在等结果。
+    policy_signal_strength: 0.2
+    geopolitical_risk: 0.65
+
+  - date: "2026-03-14"
+    phase: talks_day2_leak
+    description: |
+      巴黎谈判第二天。路透社独家报道：
+      "中美双方已就半导体出口管制达成框架性共识"。
+      消息未经官方确认，但市场反应积极。
+      同时，伊朗外交部暗示"考虑人道主义通航走廊"。
+      油价急跌至$87。
+    policy_signal_strength: 0.5
+    geopolitical_risk: 0.5
+
+  - date: "2026-03-15"
+    phase: breakthrough
+    description: |
+      巴黎谈判第三天，联合声明发布：
+      1. 中美同意90天关税冻结期（不新增关税）
+      2. 半导体出口管制"分级豁免"框架
+      3. 双方同意在4月初特朗普访华时签署正式协议
+      这是2018年贸易战以来最大的实质性缓和。
+      油价跌至$82。市场情绪急剧转向。
+    policy_signal_strength: 0.85
+    geopolitical_risk: 0.35
+    event_shock_pct: 2.5
+
+  - date: "2026-03-17"
+    phase: post_breakthrough_rally
+    description: |
+      周一开盘。周末消化巴黎谈判结果。
+      各大投行纷纷上调中国GDP预测和港股目标价：
+      - 高盛上调恒指目标至28000（此前26000）
+      - 摩根士丹利将中国从"减持"上调至"标配"
+      全球资金开始回流新兴市场。
+      但也有谨慎声音：90天冻结只是缓冲期，不是永久和平。
+    policy_signal_strength: 0.7
+    geopolitical_risk: 0.3
+
+  - date: "2026-03-18"
+    phase: strait_partial_reopening
+    description: |
+      重大地缘进展：伊朗宣布霍尔木兹海峡"人道主义通航走廊"正式开放。
+      每日通行量约为封锁前的40%。不是完全通航，但恐慌大幅缓解。
+      油价暴跌至$76（一天跌$6），仍高于危机前$71但趋势明确向下。
+      港股跟随全球风险偏好回升。
+      南下资金净流入转正。
+    policy_signal_strength: 0.6
+    geopolitical_risk: 0.2
+    event_shock_pct: 1.5
+
+  - date: "2026-03-19"
+    phase: reality_check
+    description: |
+      连涨后的第一个冷静日。
+      获利盘开始涌出——从底部反弹的资金想锁定利润。
+      美国国会部分议员质疑巴黎协议"对中国让步太多"。
+      特朗普推特："Great deal, but we could have done better!"
+      市场出现分歧：是继续追还是先跑？
+    policy_signal_strength: 0.3
+    geopolitical_risk: 0.25
+
+  - date: "2026-03-20"
+    phase: consolidation
+    description: |
+      市场进入震荡整理。
+      油价稳定在$75附近。海峡通航量提升至50%。
+      市场等待3月31日特朗普访华的进一步消息。
+      成交量回落，波动率下降。
+      进入"谈判利好已price in，等下一个催化剂"的状态。
+    policy_signal_strength: 0.2
+    geopolitical_risk: 0.2
+
+  - date: "2026-03-21"
+    phase: new_equilibrium
+    description: |
+      本轮推演最后一天。
+      市场寻找新的均衡点。
+      关键问题：恒指能回到危机前的26630吗？还是会在一个更低的位置稳住？
+      4月初特朗普访华成为下一个关键变量。
+      油价$74，接近危机前水平。
+    policy_signal_strength: 0.15
+    geopolitical_risk: 0.15

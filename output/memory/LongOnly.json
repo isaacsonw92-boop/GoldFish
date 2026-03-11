@@ -1,0 +1,197 @@
+{
+  "agent_name": "长线外资",
+  "agent_name_en": "LongOnly",
+  "position": {
+    "direction": "long",
+    "size_pct": 61.0,
+    "avg_entry_price": 26385.32786885246,
+    "unrealized_pnl_pct": 1.3745219803604223,
+    "realized_pnl_pct": 0.0,
+    "days_held": 7
+  },
+  "daily_log": [
+    {
+      "date": "2026-03-12",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "我作为亚太区投资总监，当前空仓且严重低于基准，但市场情绪熊市、政策信号弱，地缘风险高，我倾向于等待巴黎谈判结果后再行动。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "跑输基准，因为中国配置过低，但贸然加仓可能面临地缘制裁风险和市场下跌。",
+      "hsi_close": 23600,
+      "daily_change_pct": 0.0,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0.0,
+        "avg_entry_price": 0.0,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "我严重低于基准，但市场熊市、政策信号弱、地缘风险高，我倾向于观望等待更明确信号。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "跑输基准，因为当前空仓且市场不确定性高，不敢轻易加配。",
+      "hsi_close": 23149.0,
+      "daily_change_pct": -1.91,
+      "position_after": {
+        "direction": "flat",
+        "size_pct": 0.0,
+        "avg_entry_price": 0.0,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 0
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "action": "buy",
+      "position_change_pct": 1.0,
+      "reasoning": "我严重低于基准，中美半导体谈判利好和地缘缓和信号提供机会，需开始逐步加配以避免跑输。",
+      "emotion": "anxiety",
+      "confidence": 0.6,
+      "top_concern": "跑输基准和同行加配我没加，导致相对收益落后。",
+      "hsi_close": 23125.0,
+      "daily_change_pct": -0.11,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 1.0,
+        "avg_entry_price": 23125.0,
+        "unrealized_pnl_pct": 0.0,
+        "realized_pnl_pct": 0.0,
+        "days_held": 1
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第1天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "confidence": 0.5,
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "hsi_close": 24254.574999999997,
+      "daily_change_pct": 2.5,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 1.0,
+        "avg_entry_price": 23125.0,
+        "unrealized_pnl_pct": 4.884648648648636,
+        "realized_pnl_pct": 0.0,
+        "days_held": 2
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第2天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "confidence": 0.5,
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "hsi_close": 25059.0,
+      "daily_change_pct": 3.32,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 1.0,
+        "avg_entry_price": 23125.0,
+        "unrealized_pnl_pct": 8.363243243243243,
+        "realized_pnl_pct": 0.0,
+        "days_held": 3
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第3天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "confidence": 0.5,
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "hsi_close": 25913.964999999997,
+      "daily_change_pct": 1.5,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 1.0,
+        "avg_entry_price": 23125.0,
+        "unrealized_pnl_pct": 12.060389189189175,
+        "realized_pnl_pct": 0.0,
+        "days_held": 4
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "我严重低于基准，同行加配触发FOMO，政策信号中性但地缘风险可控，需分批回补以避免跑输。",
+      "emotion": "fomo",
+      "confidence": 0.7,
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核排名下滑。",
+      "hsi_close": 26120.0,
+      "daily_change_pct": 0.8,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 21.0,
+        "avg_entry_price": 25977.380952380954,
+        "unrealized_pnl_pct": 0.5490124192291762,
+        "realized_pnl_pct": 0.0,
+        "days_held": 5
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "我严重低于基准，同行加配触发FOMO，政策信号中性但地缘风险可控，需分批回补以避免跑输基准。",
+      "emotion": "fomo",
+      "confidence": 0.7,
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核和排名下滑。",
+      "hsi_close": 26451.0,
+      "daily_change_pct": 1.27,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 41.0,
+        "avg_entry_price": 26208.414634146342,
+        "unrealized_pnl_pct": 0.9256010683591639,
+        "realized_pnl_pct": 0.0,
+        "days_held": 6
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "我严重低于基准，同行加配触发FOMO，政策信号中性但地缘风险可控，需分批回补以避免跑输基准。",
+      "emotion": "fomo",
+      "confidence": 0.7,
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核和排名下滑。",
+      "hsi_close": 26748.0,
+      "daily_change_pct": 1.12,
+      "position_after": {
+        "direction": "long",
+        "size_pct": 61.0,
+        "avg_entry_price": 26385.32786885246,
+        "unrealized_pnl_pct": 1.3745219803604223,
+        "realized_pnl_pct": 0.0,
+        "days_held": 7
+      }
+    }
+  ],
+  "emotion_trajectory": [
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "anxiety",
+    "fomo",
+    "fomo",
+    "fomo"
+  ],
+  "trade_count": 4
+}

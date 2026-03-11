@@ -1,0 +1,73 @@
+{
+  "date": "2024-09-24",
+  "event": {
+    "date": "2024-09-24",
+    "type": "policy_bombshell",
+    "description": "国新办新闻发布会，央行行长潘功胜、金融监管总局局长李云泽、证监会主席吴清联合出场。\n宣布：降准0.5个百分点、政策利率下调20bp、降低存量房贷利率、\n创设5000亿元互换便利（机构可用债券换央行流动性买股票）、\n创设3000亿元股票回购增持再贷款。\n",
+    "policy_signal_strength": 0.95,
+    "impact_sectors": [
+      "tech",
+      "property",
+      "financials",
+      "broad_market"
+    ],
+    "market_data": {
+      "hsi_close": 19000,
+      "daily_change_pct": 4.13,
+      "volume_hkd_billion": 200,
+      "southbound_net_buy_hkd_billion": 13.7
+    }
+  },
+  "market_state": {
+    "hsi_close": 18181.0,
+    "daily_change_pct": -0.1,
+    "volume_hkd_billion": 103.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow"
+  },
+  "decisions": [
+    {
+      "date": "2024-09-24",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-24",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第1天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "date": "2024-09-24",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-24",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

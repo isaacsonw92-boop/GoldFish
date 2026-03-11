@@ -1,0 +1,1 @@
+- [x] File `events/tech_boom_2025.yaml` exists and is valid YAML.

@@ -1,0 +1,64 @@
+{
+  "date": "2024-10-02",
+  "event": {
+    "date": "2024-10-02",
+    "type": "continuation",
+    "description": "港股在国庆期间继续上涨，中概ADR在美国市场暴涨。FOMO情绪蔓延至全球。",
+    "market_data": {
+      "hsi_close": 22700,
+      "daily_change_pct": 4.6,
+      "volume_hkd_billion": 450
+    }
+  },
+  "market_state": {
+    "hsi_close": 18836.0,
+    "daily_change_pct": -0.06,
+    "volume_hkd_billion": 102.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow"
+  },
+  "decisions": [
+    {
+      "date": "2024-10-02",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-02",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-02",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-02",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2024-09-24",
+  "event": {
+    "date": "2024-09-24",
+    "type": "policy_bombshell",
+    "description": "Test Event 1",
+    "market_data": {
+      "hsi_close": 19000,
+      "daily_change_pct": 4.13
+    }
+  },
+  "market_state": {
+    "hsi_close": 18500,
+    "daily_change_pct": 2.0,
+    "volume_hkd_billion": 200,
+    "sentiment": "bullish"
+  },
+  "decisions": []
+}

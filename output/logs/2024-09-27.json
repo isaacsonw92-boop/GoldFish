@@ -1,0 +1,65 @@
+{
+  "date": "2024-09-27",
+  "event": {
+    "date": "2024-09-27",
+    "type": "momentum",
+    "description": "市场延续暴涨，散户和外资同时涌入。成交量继续放大。",
+    "policy_signal_strength": 0.5,
+    "market_data": {
+      "hsi_close": 21100,
+      "daily_change_pct": 2.4,
+      "volume_hkd_billion": 380
+    }
+  },
+  "market_state": {
+    "hsi_close": 18766.0,
+    "daily_change_pct": 0.9,
+    "volume_hkd_billion": 140.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow"
+  },
+  "decisions": [
+    {
+      "date": "2024-09-27",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-27",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-27",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-27",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

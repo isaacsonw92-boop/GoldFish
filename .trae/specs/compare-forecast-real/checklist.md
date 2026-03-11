@@ -1,0 +1,2 @@
+- [x] `visualize.py` correctly plots the real HSI line when data is available.
+- [x] `visualize.py` does not crash when real data is missing (future scenarios).

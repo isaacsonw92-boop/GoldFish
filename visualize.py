@@ -36,6 +36,25 @@ def plot_dashboard(logs: list[dict], output_path: str, scenario_name: str = ""):
     hsi = [log["market_state"]["hsi_close"] for log in logs]
     changes = [log["market_state"]["daily_change_pct"] for log in logs]
 
+    # 尝试提取真实恒指（如果有的话）
+    real_hsi = []
+    has_real_data = False
+    for log in logs:
+        # 从event.market_data中获取真实数据
+        try:
+            val = log.get("event", {}).get("market_data", {}).get("hsi_close")
+            if val:
+                real_hsi.append(float(val))
+                has_real_data = True
+            else:
+                real_hsi.append(None)
+        except (ValueError, TypeError):
+            real_hsi.append(None)
+    
+    # 如果全部是None，则视为无真实数据
+    if not has_real_data:
+        real_hsi = [None] * len(logs)
+
     # 提取每个Agent的行为和情绪
     agent_names = ["对冲基金", "长线外资", "南下资金", "价值投资者"]
     agent_en = ["HedgeFund", "LongOnly", "Southbound", "ValueInvestor"]
@@ -93,20 +112,36 @@ def plot_dashboard(logs: list[dict], output_path: str, scenario_name: str = ""):
     ax1_twin = ax1.twinx()
 
     color_line = "#1565C0"
-    ax1.plot(short_dates, hsi, color=color_line, linewidth=2.5, marker="o",
-             markersize=6, zorder=5, label="恒生指数")
-    ax1.fill_between(short_dates, min(hsi) * 0.98, hsi, alpha=0.1, color=color_line)
+    # 绘制AI推演曲线
+    line1, = ax1.plot(short_dates, hsi, color=color_line, linewidth=2.5, marker="o",
+             markersize=6, zorder=5, label="AI推演恒指")
+    
+    # 绘制真实恒指曲线（如果有）
+    lines = [line1]
+    if has_real_data:
+        # 过滤None值进行绘制（matplotlib会自动断开None点，或者我们需要处理一下）
+        # 为了简单起见，我们假设如果有数据，通常是连续的，或者matplotlib能处理None
+        line2, = ax1.plot(short_dates, real_hsi, color="gray", linewidth=2.0, linestyle="--",
+                 marker="x", markersize=5, zorder=4, alpha=0.7, label="真实历史恒指")
+        lines.append(line2)
+
+    ax1.fill_between(short_dates, min(filter(None, hsi + [x for x in real_hsi if x])) * 0.98, hsi, alpha=0.1, color=color_line)
 
     # 涨跌幅柱状图
     bar_colors = ["#4CAF50" if c >= 0 else "#F44336" for c in changes]
-    ax1_twin.bar(short_dates, changes, color=bar_colors, alpha=0.4, width=0.6, label="日涨跌幅%")
+    bar_plot = ax1_twin.bar(short_dates, changes, color=bar_colors, alpha=0.4, width=0.6, label="日涨跌幅%")
+    # lines.append(bar_plot) # bar不是line对象，legend处理需要注意，但双轴通常分开legend
+
     ax1_twin.axhline(y=0, color="gray", linestyle="-", linewidth=0.5)
 
     ax1.set_ylabel("恒生指数", fontsize=12, color=color_line)
     ax1_twin.set_ylabel("日涨跌幅 (%)", fontsize=12)
-    ax1.set_title("恒生指数走势与日涨跌幅", fontsize=14, pad=10)
+    ax1.set_title("恒生指数走势：AI推演 vs 真实历史", fontsize=14, pad=10)
     ax1.tick_params(axis="x", rotation=45)
     ax1.grid(axis="y", alpha=0.3)
+    
+    # 合并图例
+    ax1.legend(handles=lines, loc="upper left", fontsize=10)
 
     # 标注关键事件
     for i, log in enumerate(logs):

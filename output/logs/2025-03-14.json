@@ -1,0 +1,62 @@
+{
+  "date": "2025-03-14",
+  "event": {
+    "date": "2025-03-14",
+    "type": "stabilization",
+    "description": "周五。市场情绪从狂热回归理性。\n虽然长期看好，但短期估值修复已基本完成。\n恒指在高位企稳，成交量开始萎缩。\n投资者开始关注下周的具体实施细则落地情况。\n",
+    "policy_signal_strength": 0.2,
+    "impact_sectors": [],
+    "market_data": {}
+  },
+  "market_state": {
+    "hsi_close": 21102.0,
+    "daily_change_pct": -0.83,
+    "volume_hkd_billion": 151.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "underweight",
+    "hedge_fund_short_interest": "moderate",
+    "southbound_flow_trend": "small_inflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪中性，政策信号弱，成交量萎缩，我维持做空中国资产的谨慎立场，等待更明确信号。",
+      "emotion": "anxiety",
+      "top_concern": "市场可能因政策细节落地而反弹，导致空头仓位亏损。",
+      "confidence": 0.6,
+      "date": "2025-03-14",
+      "agent": "对冲基金"
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 20,
+      "reasoning": "委员会批准后，我需分批加配以缩小与基准的差距，避免跑输风险，政策信号虽弱但同行已行动。",
+      "emotion": "anxiety",
+      "top_concern": "跑输基准和同行加配我没加，导致年度考核不佳。",
+      "confidence": 0.6,
+      "date": "2025-03-14",
+      "agent": "长线外资"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪中性，政策信号弱，我作为内地资金等待更明确信号或情绪变化再行动。",
+      "emotion": "anxiety",
+      "top_concern": "政策不兑现导致回调，浮盈回吐。",
+      "confidence": 0.6,
+      "date": "2025-03-14",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场跌幅仅8.2%，远未达到我35%的安全边际要求，我保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场估值修复可能过快，缺乏足够安全边际来买入优质公司。",
+      "confidence": 0.95,
+      "date": "2025-03-14",
+      "agent": "价值投资者"
+    }
+  ]
+}

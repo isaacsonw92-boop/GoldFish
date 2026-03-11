@@ -1,0 +1,67 @@
+{
+  "date": "2025-03-11",
+  "event": {
+    "date": "2025-03-11",
+    "type": "policy_shock",
+    "description": "周二上午10点。突发新闻：财政部与工信部联合宣布，将发行2万亿元人民币“科技创新特别国债”。\n资金用途明确：\n1. 50%用于补贴购买国产AI芯片的企业。\n2. 30%用于建立国家级算力中心。\n3. 20%用于支持头部互联网平台的AI大模型研发。\n市场解读：这是对科技股的史诗级利好，力度远超预期（市场原本预期5000亿）。\n",
+    "policy_signal_strength": 0.95,
+    "impact_sectors": [
+      "tech",
+      "semiconductor",
+      "internet"
+    ],
+    "market_data": {}
+  },
+  "market_state": {
+    "hsi_close": 19408.0,
+    "daily_change_pct": -0.47,
+    "volume_hkd_billion": 125.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "underweight",
+    "hedge_fund_short_interest": "moderate",
+    "southbound_flow_trend": "small_inflow"
+  },
+  "decisions": [
+    {
+      "action": "cover_short",
+      "position_change_pct": 20,
+      "reasoning": "突发史诗级利好政策，远超预期，我担心空头仓位会因市场反弹而爆仓，必须立即平仓以控制风险。",
+      "emotion": "panic",
+      "top_concern": "政策利好引发市场大幅反弹，导致我的杠杆空头仓位爆仓，净值急剧下跌。",
+      "confidence": 0.9,
+      "date": "2025-03-11",
+      "agent": "对冲基金"
+    },
+    {
+      "date": "2025-03-11",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第1天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 80,
+      "reasoning": "史诗级政策利好科技股，国家队救市信仰强烈，我作为内地资金必须追涨，避免错过行情。",
+      "emotion": "fomo",
+      "top_concern": "政策利好可能被市场过度消化，导致短期回调风险。",
+      "confidence": 0.9,
+      "date": "2025-03-11",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场跌幅仅0.5%，远未达到我的安全边际要求，我保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场可能因政策利好而过度兴奋，导致价格偏离内在价值，我需避免追高。",
+      "confidence": 0.95,
+      "date": "2025-03-11",
+      "agent": "价值投资者"
+    }
+  ]
+}

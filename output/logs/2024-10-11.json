@@ -1,0 +1,64 @@
+{
+  "date": "2024-10-11",
+  "event": {
+    "date": "2024-10-11",
+    "type": "new_normal",
+    "description": "市场回落至20000附近，比924前高约10%，但比峰值低15%。进入震荡格局。",
+    "market_data": {
+      "hsi_close": 20200,
+      "daily_change_pct": -2.9,
+      "volume_hkd_billion": 250
+    }
+  },
+  "market_state": {
+    "hsi_close": 18608.0,
+    "daily_change_pct": 0.18,
+    "volume_hkd_billion": 106.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow"
+  },
+  "decisions": [
+    {
+      "date": "2024-10-11",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-11",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-11",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-11",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

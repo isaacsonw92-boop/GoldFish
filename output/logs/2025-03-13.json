@@ -1,0 +1,65 @@
+{
+  "date": "2025-03-13",
+  "event": {
+    "date": "2025-03-13",
+    "type": "divergence",
+    "description": "周四。市场连续两日大涨后，获利盘开始涌现。\n部分保守机构开始质疑财政赤字扩大的长期影响。\n南下资金继续疯狂买入，但外资买盘开始减弱。\n市场出现剧烈波动，多空分歧加大。\n",
+    "policy_signal_strength": 0.4,
+    "impact_sectors": [
+      "tech"
+    ],
+    "market_data": {}
+  },
+  "market_state": {
+    "hsi_close": 21278.0,
+    "daily_change_pct": 2.38,
+    "volume_hkd_billion": 220.0,
+    "sentiment": "bullish",
+    "foreign_positioning": "underweight",
+    "hedge_fund_short_interest": "moderate",
+    "southbound_flow_trend": "small_inflow"
+  },
+  "decisions": [
+    {
+      "action": "add_short",
+      "position_change_pct": 30,
+      "reasoning": "市场连续大涨后获利盘涌现，外资买盘减弱，政策信号弱，我维持做空中国资产的谨慎立场，利用杠杆重新建立空头仓位。",
+      "emotion": "anxiety",
+      "top_concern": "市场剧烈波动可能导致空头仓位因反弹而爆仓，跑输同行和LP赎回风险。",
+      "confidence": 0.6,
+      "date": "2025-03-13",
+      "agent": "对冲基金"
+    },
+    {
+      "date": "2025-03-13",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第3天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "action": "sell",
+      "position_change_pct": 30,
+      "reasoning": "连续大涨后获利盘涌现，政策信号减弱，我担心回调，先锁定部分利润。",
+      "emotion": "anxiety",
+      "top_concern": "政策不兑现导致市场反转，被套在高位。",
+      "confidence": 0.7,
+      "date": "2025-03-13",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场累计跌幅仅9.1%，远未达到我35%的安全边际要求，我保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场可能继续上涨，但我必须坚持纪律，避免因短期波动而错误买入。",
+      "confidence": 0.95,
+      "date": "2025-03-13",
+      "agent": "价值投资者"
+    }
+  ]
+}

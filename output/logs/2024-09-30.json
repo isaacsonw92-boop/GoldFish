@@ -1,0 +1,65 @@
+{
+  "date": "2024-09-30",
+  "event": {
+    "date": "2024-09-30",
+    "type": "euphoria",
+    "description": "港股成交额突破5000亿港元，创历史纪录。恒指站上21000。\n市场情绪极度亢奋，\"牛回来了\"成为社交媒体热词。\n",
+    "policy_signal_strength": 0.3,
+    "market_data": {
+      "hsi_close": 21700,
+      "daily_change_pct": 2.8,
+      "volume_hkd_billion": 500
+    }
+  },
+  "market_state": {
+    "hsi_close": 18847.0,
+    "daily_change_pct": 0.43,
+    "volume_hkd_billion": 114.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow"
+  },
+  "decisions": [
+    {
+      "date": "2024-09-30",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-30",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-30",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-30",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

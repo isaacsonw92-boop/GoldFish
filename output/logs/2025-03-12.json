@@ -1,0 +1,66 @@
+{
+  "date": "2025-03-12",
+  "event": {
+    "date": "2025-03-12",
+    "type": "fomo_spread",
+    "description": "周三。政策细节进一步流出，补贴将采取“即申即享”模式，效率极高。\n外资投行（高盛、摩根大通）连夜发布报告，上调中国科技股评级至“超配”。\n隔夜中概股暴涨15%。港股开盘即高开。\n社交媒体上关于“中国版英伟达”的讨论热度爆表。\n",
+    "policy_signal_strength": 0.8,
+    "impact_sectors": [
+      "tech",
+      "broad_market"
+    ],
+    "market_data": {}
+  },
+  "market_state": {
+    "hsi_close": 20784.0,
+    "daily_change_pct": 7.09,
+    "volume_hkd_billion": 464.0,
+    "sentiment": "euphoric",
+    "foreign_positioning": "underweight",
+    "hedge_fund_short_interest": "moderate",
+    "southbound_flow_trend": "small_inflow"
+  },
+  "decisions": [
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪过于狂热，日涨幅7.09%和隔夜中概股暴涨15%显示泡沫风险。我担心追高后回调导致爆仓，宁愿观望等待更清晰信号。",
+      "emotion": "anxiety",
+      "top_concern": "市场可能突然反转，导致我因杠杆而大幅亏损，触发LP赎回。",
+      "confidence": 0.7,
+      "date": "2025-03-12",
+      "agent": "对冲基金"
+    },
+    {
+      "date": "2025-03-12",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第2天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "action": "buy",
+      "position_change_pct": 15,
+      "reasoning": "政策利好强烈，市场情绪高涨，我作为内地资金必须追涨互联网龙头和高股息股，避免错过行情。",
+      "emotion": "fomo",
+      "top_concern": "政策不兑现导致回调被套",
+      "confidence": 0.85,
+      "date": "2025-03-12",
+      "agent": "南下资金"
+    },
+    {
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场情绪狂热，涨幅巨大，但跌幅仅6.6%，远未达到我的35%安全边际要求。我保持现金等待更好价格。",
+      "emotion": "calm",
+      "top_concern": "市场可能因情绪推动而过度上涨，导致未来回调时我错失买入机会，但我更担心买入价格过高而损失安全边际。",
+      "confidence": 0.95,
+      "date": "2025-03-12",
+      "agent": "价值投资者"
+    }
+  ]
+}

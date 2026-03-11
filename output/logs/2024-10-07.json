@@ -1,0 +1,64 @@
+{
+  "date": "2024-10-07",
+  "event": {
+    "date": "2024-10-07",
+    "type": "peak_euphoria",
+    "description": "恒指盘中触及23000以上，两周涨幅近25%。\n所有参与者都已入场。市场预期10月8日发改委发布会将公布具体财政刺激数字。\n",
+    "market_data": {
+      "hsi_close": 23100,
+      "daily_change_pct": 1.8,
+      "volume_hkd_billion": 420
+    }
+  },
+  "market_state": {
+    "hsi_close": 18790.0,
+    "daily_change_pct": -0.24,
+    "volume_hkd_billion": 108.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow"
+  },
+  "decisions": [
+    {
+      "date": "2024-10-07",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-07",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-07",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-10-07",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

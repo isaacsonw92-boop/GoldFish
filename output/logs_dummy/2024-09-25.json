@@ -1,0 +1,19 @@
+{
+  "date": "2024-09-25",
+  "event": {
+    "date": "2024-09-25",
+    "type": "policy_followup",
+    "description": "Test Event 2",
+    "market_data": {
+      "hsi_close": 19700,
+      "daily_change_pct": 3.7
+    }
+  },
+  "market_state": {
+    "hsi_close": 19200,
+    "daily_change_pct": 3.5,
+    "volume_hkd_billion": 250,
+    "sentiment": "bullish"
+  },
+  "decisions": []
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2024-09-26",
+  "event": {
+    "date": "2024-09-26",
+    "type": "political_signal",
+    "description": "中央政治局召开会议讨论经济（极罕见——通常在10月/12月讨论经济）。\n首次提出\"促进房地产市场止跌回稳\"。\n强调\"实施有力度的降息\"。\n市场解读：政策重心从\"去杠杆\"转向\"稳增长\"，方向性转变。\n",
+    "policy_signal_strength": 0.98,
+    "impact_sectors": [
+      "property",
+      "broad_market",
+      "consumer"
+    ],
+    "market_data": {
+      "hsi_close": 20600,
+      "daily_change_pct": 4.6,
+      "volume_hkd_billion": 320
+    },
+    "external_reactions": [
+      "高盛上调中国股票评级至Overweight",
+      "大摩上调恒指目标价"
+    ]
+  },
+  "market_state": {
+    "hsi_close": 18599.0,
+    "daily_change_pct": -0.39,
+    "volume_hkd_billion": 122.0,
+    "sentiment": "neutral",
+    "foreign_positioning": "heavily_underweight",
+    "hedge_fund_short_interest": "historically_high",
+    "southbound_flow_trend": "steady_inflow",
+    "external_reactions": [
+      "高盛上调中国股票评级至Overweight",
+      "大摩上调恒指目标价"
+    ]
+  },
+  "decisions": [
+    {
+      "date": "2024-09-26",
+      "agent": "对冲基金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-26",
+      "agent": "长线外资",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "内部评估流程进行中（催化剂后第3天/需3-7天），暂无法操作",
+      "emotion": "anxiety",
+      "top_concern": "同行可能在加仓但我的流程还没走完",
+      "confidence": 0.5,
+      "_forced": true
+    },
+    {
+      "date": "2024-09-26",
+      "agent": "南下资金",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09-26",
+      "agent": "价值投资者",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "决策异常，默认持有: 'ascii' codec can't encode characters in position ",
+      "emotion": "calm",
+      "top_concern": "系统异常",
+      "confidence": 0.0
+    }
+  ]
+}

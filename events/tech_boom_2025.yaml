@@ -1,0 +1,74 @@
+# 2025年科技股爆发推演 - 虚拟场景
+scenario:
+  name: "2025年科技创新特别国债刺激计划"
+  description: "虚拟场景：为了应对全球算力竞争，中国宣布发行2万亿特别国债，专项用于补贴AI与半导体产业。"
+  start_date: "2025-03-10"
+  end_date: "2025-03-14"
+
+initial_market:
+  hsi_close: 19500
+  daily_volume_hkd_billion: 90
+  sentiment: "neutral"
+  foreign_positioning: "underweight"
+  hedge_fund_short_interest: "moderate"
+  southbound_flow_trend: "small_inflow"
+
+events:
+  - date: "2025-03-10"
+    type: "baseline"
+    description: "周一。市场延续上周的窄幅震荡。投资者在等待即将召开的重要经济会议信号。恒指在19500附近徘徊，成交清淡。"
+    policy_signal_strength: 0.1
+    impact_sectors: []
+    # Forecast模式下不需要market_data，但可以留作参考或为空
+    market_data: {}
+
+  - date: "2025-03-11"
+    type: "policy_shock"
+    description: |
+      周二上午10点。突发新闻：财政部与工信部联合宣布，将发行2万亿元人民币“科技创新特别国债”。
+      资金用途明确：
+      1. 50%用于补贴购买国产AI芯片的企业。
+      2. 30%用于建立国家级算力中心。
+      3. 20%用于支持头部互联网平台的AI大模型研发。
+      市场解读：这是对科技股的史诗级利好，力度远超预期（市场原本预期5000亿）。
+    policy_signal_strength: 0.95
+    impact_sectors: ["tech", "semiconductor", "internet"]
+    market_data: {}
+
+  - date: "2025-03-12"
+    type: "fomo_spread"
+    description: |
+      周三。政策细节进一步流出，补贴将采取“即申即享”模式，效率极高。
+      外资投行（高盛、摩根大通）连夜发布报告，上调中国科技股评级至“超配”。
+      隔夜中概股暴涨15%。港股开盘即高开。
+      社交媒体上关于“中国版英伟达”的讨论热度爆表。
+    policy_signal_strength: 0.8
+    impact_sectors: ["tech", "broad_market"]
+    market_data: {}
+
+  - date: "2025-03-13"
+    type: "divergence"
+    description: |
+      周四。市场连续两日大涨后，获利盘开始涌现。
+      部分保守机构开始质疑财政赤字扩大的长期影响。
+      南下资金继续疯狂买入，但外资买盘开始减弱。
+      市场出现剧烈波动，多空分歧加大。
+    policy_signal_strength: 0.4
+    impact_sectors: ["tech"]
+    market_data: {}
+
+  - date: "2025-03-14"
+    type: "stabilization"
+    description: |
+      周五。市场情绪从狂热回归理性。
+      虽然长期看好，但短期估值修复已基本完成。
+      恒指在高位企稳，成交量开始萎缩。
+      投资者开始关注下周的具体实施细则落地情况。
+    policy_signal_strength: 0.2
+    impact_sectors: []
+    market_data: {}
+
+# 预期的推演结果（仅供参考，不影响Forecast运行）
+expected_behavior:
+  reaction_order: ["对冲基金抢筹", "南下资金跟进", "长线外资被迫加仓"]
+  peak_signal: "3月12日成交量放大"

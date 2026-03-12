@@ -12,9 +12,9 @@
     "market_data": {}
   },
   "market_state": {
-    "hsi_close": 20784.0,
-    "daily_change_pct": 7.09,
-    "volume_hkd_billion": 464.0,
+    "hsi_close": 20450.0,
+    "daily_change_pct": 5.04,
+    "volume_hkd_billion": 330.0,
     "sentiment": "euphoric",
     "foreign_positioning": "underweight",
     "hedge_fund_short_interest": "moderate",
@@ -24,9 +24,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场情绪过于狂热，日涨幅7.09%和隔夜中概股暴涨15%显示泡沫风险。我担心追高后回调导致爆仓，宁愿观望等待更清晰信号。",
+      "reasoning": "市场情绪过于狂热，日涨幅5.04%和隔夜中概股暴涨15%显示泡沫风险，我担心追高被套，先观望确认趋势。",
       "emotion": "anxiety",
-      "top_concern": "市场可能突然反转，导致我因杠杆而大幅亏损，触发LP赎回。",
+      "top_concern": "市场可能快速反转导致我因杠杆而爆仓，或跑输同行引发LP赎回。",
       "confidence": 0.7,
       "date": "2025-03-12",
       "agent": "对冲基金"
@@ -45,9 +45,9 @@
     {
       "action": "buy",
       "position_change_pct": 15,
-      "reasoning": "政策利好强烈，市场情绪高涨，我作为内地资金必须追涨互联网龙头和高股息股，避免错过行情。",
+      "reasoning": "政策利好强劲，隔夜中概股暴涨，我信仰国家队救市，必须加仓互联网龙头和高股息股，避免错过行情。",
       "emotion": "fomo",
-      "top_concern": "政策不兑现导致回调被套",
+      "top_concern": "政策不兑现导致回调，被套在高位。",
       "confidence": 0.85,
       "date": "2025-03-12",
       "agent": "南下资金"
@@ -55,9 +55,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场情绪狂热，涨幅巨大，但跌幅仅6.6%，远未达到我的35%安全边际要求。我保持现金等待更好价格。",
+      "reasoning": "市场情绪狂热，涨幅5.04%但跌幅仅4.9%，远未达到35%安全边际要求，我保持现金等待更好价格。",
       "emotion": "calm",
-      "top_concern": "市场可能因情绪推动而过度上涨，导致未来回调时我错失买入机会，但我更担心买入价格过高而损失安全边际。",
+      "top_concern": "市场可能因情绪推动而高估，我担心错过真正安全边际的买入机会。",
       "confidence": 0.95,
       "date": "2025-03-12",
       "agent": "价值投资者"

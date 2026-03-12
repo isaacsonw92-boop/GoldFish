@@ -19,21 +19,21 @@
   },
   "decisions": [
     {
-      "action": "add_short",
-      "position_change_pct": 10,
-      "reasoning": "市场窄幅震荡，政策信号弱，我维持做空中国资产的谨慎立场，利用杠杆增加空头仓位。",
+      "action": "hold",
+      "position_change_pct": 0,
+      "reasoning": "市场窄幅震荡，政策信号弱，我持谨慎态度，等待更明确信号再做空。",
       "emotion": "calm",
-      "top_concern": "政策会议可能突然释放利好，导致空头仓位被轧空。",
-      "confidence": 0.6,
+      "top_concern": "过早做空可能因政策利好导致爆仓风险。",
+      "confidence": 0.8,
       "date": "2025-03-10",
       "agent": "对冲基金"
     },
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场情绪中性，政策信号弱，我需等待委员会批准，且当前空仓符合低配策略。",
+      "reasoning": "市场情绪中性，政策信号弱，我需等待委员会批准，且当前空仓符合低配策略，避免过早行动。",
       "emotion": "anxiety",
-      "top_concern": "跑输基准，因中国配置严重低于基准，但调整需流程时间。",
+      "top_concern": "跑输基准，因中国配置严重低于基准，但缺乏明确催化剂加仓。",
       "confidence": 0.7,
       "date": "2025-03-10",
       "agent": "长线外资"
@@ -41,10 +41,10 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场震荡，政策信号弱，我等待更明确的救市信号或情绪变化再行动。",
-      "emotion": "calm",
-      "top_concern": "政策不兑现或错过后续行情",
-      "confidence": 0.7,
+      "reasoning": "市场震荡无方向，政策信号弱，我等待更明确信号或国家队出手再行动。",
+      "emotion": "anxiety",
+      "top_concern": "政策不兑现导致错过行情或市场继续下跌。",
+      "confidence": 0.6,
       "date": "2025-03-10",
       "agent": "南下资金"
     },
@@ -53,8 +53,8 @@
       "position_change_pct": 0,
       "reasoning": "市场跌幅仅0.0%，远未达到我的安全边际要求，我保持现金等待更好价格。",
       "emotion": "calm",
-      "top_concern": "市场可能长期窄幅震荡，缺乏足够的安全边际机会。",
-      "confidence": 0.95,
+      "top_concern": "市场可能长期不提供足够的安全边际，导致我错失机会。",
+      "confidence": 0.9,
       "date": "2025-03-10",
       "agent": "价值投资者"
     }

@@ -9,9 +9,9 @@
     "market_data": {}
   },
   "market_state": {
-    "hsi_close": 21102.0,
-    "daily_change_pct": -0.83,
-    "volume_hkd_billion": 151.0,
+    "hsi_close": 20840.0,
+    "daily_change_pct": -0.63,
+    "volume_hkd_billion": 143.0,
     "sentiment": "neutral",
     "foreign_positioning": "underweight",
     "hedge_fund_short_interest": "moderate",
@@ -21,9 +21,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场情绪中性，政策信号弱，成交量萎缩，我维持做空中国资产的谨慎立场，等待更明确信号。",
+      "reasoning": "市场情绪中性，成交量萎缩，政策信号弱，我持谨慎态度，等待更明确信号调整仓位。",
       "emotion": "anxiety",
-      "top_concern": "市场可能因政策细节落地而反弹，导致空头仓位亏损。",
+      "top_concern": "政策实施细则落地可能引发市场波动，导致空头仓位亏损。",
       "confidence": 0.6,
       "date": "2025-03-14",
       "agent": "对冲基金"
@@ -31,9 +31,9 @@
     {
       "action": "buy",
       "position_change_pct": 20,
-      "reasoning": "委员会批准后，我需分批加配以缩小与基准的差距，避免跑输风险，政策信号虽弱但同行已行动。",
+      "reasoning": "委员会批准后，我需分批加配以降低跑输基准风险，政策信号弱但同行已行动，基本面权重高支持部分建仓。",
       "emotion": "anxiety",
-      "top_concern": "跑输基准和同行加配我没加，导致年度考核不佳。",
+      "top_concern": "跑输基准和同行加配我没加，地缘风险仍存但短期压力大。",
       "confidence": 0.6,
       "date": "2025-03-14",
       "agent": "长线外资"
@@ -41,9 +41,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场情绪中性，政策信号弱，我作为内地资金等待更明确信号或情绪变化再行动。",
+      "reasoning": "市场情绪中性，政策信号弱，我担心回调但信仰国家队，先观望等待下周政策细节。",
       "emotion": "anxiety",
-      "top_concern": "政策不兑现导致回调，浮盈回吐。",
+      "top_concern": "政策不兑现导致市场回调，浮盈回吐。",
       "confidence": 0.6,
       "date": "2025-03-14",
       "agent": "南下资金"
@@ -51,9 +51,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场跌幅仅8.2%，远未达到我35%的安全边际要求，我保持现金等待更好价格。",
+      "reasoning": "市场跌幅仅6.9%，远未达到35%安全边际要求，我保持现金等待更好价格。",
       "emotion": "calm",
-      "top_concern": "市场估值修复可能过快，缺乏足够安全边际来买入优质公司。",
+      "top_concern": "市场可能不会下跌到足够的安全边际，导致我错过长期投资机会。",
       "confidence": 0.95,
       "date": "2025-03-14",
       "agent": "价值投资者"

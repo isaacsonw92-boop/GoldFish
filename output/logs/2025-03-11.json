@@ -13,9 +13,9 @@
     "market_data": {}
   },
   "market_state": {
-    "hsi_close": 19408.0,
-    "daily_change_pct": -0.47,
-    "volume_hkd_billion": 125.0,
+    "hsi_close": 19469.0,
+    "daily_change_pct": -0.16,
+    "volume_hkd_billion": 119.0,
     "sentiment": "neutral",
     "foreign_positioning": "underweight",
     "hedge_fund_short_interest": "moderate",
@@ -24,11 +24,11 @@
   "decisions": [
     {
       "action": "cover_short",
-      "position_change_pct": 20,
-      "reasoning": "突发史诗级利好政策，远超预期，我担心空头仓位会因市场反弹而爆仓，必须立即平仓以控制风险。",
-      "emotion": "panic",
-      "top_concern": "政策利好引发市场大幅反弹，导致我的杠杆空头仓位爆仓，净值急剧下跌。",
-      "confidence": 0.9,
+      "position_change_pct": 10,
+      "reasoning": "突发史诗级利好政策，市场可能大幅反弹，我担心空头仓位会快速亏损，先平仓避险。",
+      "emotion": "anxiety",
+      "top_concern": "市场因政策利好暴涨，导致我的空头仓位爆仓，净值大幅回撤。",
+      "confidence": 0.8,
       "date": "2025-03-11",
       "agent": "对冲基金"
     },
@@ -46,9 +46,9 @@
     {
       "action": "buy",
       "position_change_pct": 80,
-      "reasoning": "史诗级政策利好科技股，国家队救市信仰强烈，我作为内地资金必须追涨，避免错过行情。",
+      "reasoning": "史诗级政策利好科技股，国家队出手信号强，我信仰政策救市，必须买入互联网龙头和高股息股。",
       "emotion": "fomo",
-      "top_concern": "政策利好可能被市场过度消化，导致短期回调风险。",
+      "top_concern": "错过这波由政策驱动的科技股大涨行情",
       "confidence": 0.9,
       "date": "2025-03-11",
       "agent": "南下资金"
@@ -56,9 +56,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场跌幅仅0.5%，远未达到我的安全边际要求，我保持现金等待更好价格。",
+      "reasoning": "市场跌幅仅0.2%，远未达到我的安全边际要求，我保持现金等待更好价格。",
       "emotion": "calm",
-      "top_concern": "市场可能因政策利好而过度兴奋，导致价格偏离内在价值，我需避免追高。",
+      "top_concern": "政策利好可能推高股价，但我不基于短期事件决策，只关注内在价值和安全边际。",
       "confidence": 0.95,
       "date": "2025-03-11",
       "agent": "价值投资者"

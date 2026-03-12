@@ -6,7 +6,12 @@
 import argparse
 import os
 import sys
+import io
 from pathlib import Path
+
+# 强制设置标准输出为UTF-8，解决Windows下打印中文可能报错的问题
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 from openai import OpenAI
 from engine.scheduler import Scheduler

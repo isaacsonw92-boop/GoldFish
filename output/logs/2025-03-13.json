@@ -11,9 +11,9 @@
     "market_data": {}
   },
   "market_state": {
-    "hsi_close": 21278.0,
-    "daily_change_pct": 2.38,
-    "volume_hkd_billion": 220.0,
+    "hsi_close": 20972.0,
+    "daily_change_pct": 2.55,
+    "volume_hkd_billion": 228.0,
     "sentiment": "bullish",
     "foreign_positioning": "underweight",
     "hedge_fund_short_interest": "moderate",
@@ -23,9 +23,9 @@
     {
       "action": "add_short",
       "position_change_pct": 30,
-      "reasoning": "市场连续大涨后获利盘涌现，外资买盘减弱，政策信号弱，我维持做空中国资产的谨慎立场，利用杠杆重新建立空头仓位。",
+      "reasoning": "市场连续大涨后获利盘涌现，外资买盘减弱，我担心泡沫风险，基于做空中国的叙事重新建空仓。",
       "emotion": "anxiety",
-      "top_concern": "市场剧烈波动可能导致空头仓位因反弹而爆仓，跑输同行和LP赎回风险。",
+      "top_concern": "市场反弹可能持续导致空头仓位快速亏损，引发爆仓风险。",
       "confidence": 0.6,
       "date": "2025-03-13",
       "agent": "对冲基金"
@@ -43,7 +43,7 @@
     },
     {
       "action": "sell",
-      "position_change_pct": 30,
+      "position_change_pct": 20,
       "reasoning": "连续大涨后获利盘涌现，政策信号减弱，我担心回调，先锁定部分利润。",
       "emotion": "anxiety",
       "top_concern": "政策不兑现导致市场反转，被套在高位。",
@@ -54,9 +54,9 @@
     {
       "action": "hold",
       "position_change_pct": 0,
-      "reasoning": "市场累计跌幅仅9.1%，远未达到我35%的安全边际要求，我保持现金等待更好价格。",
+      "reasoning": "市场涨幅2.55%，远未达到35%安全边际要求，我保持现金等待更好价格。",
       "emotion": "calm",
-      "top_concern": "市场可能继续上涨，但我必须坚持纪律，避免因短期波动而错误买入。",
+      "top_concern": "市场情绪狂热，可能错过真正的好价格机会，但我必须坚持安全边际原则。",
       "confidence": 0.95,
       "date": "2025-03-13",
       "agent": "价值投资者"

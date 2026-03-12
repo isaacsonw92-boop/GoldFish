@@ -152,15 +152,19 @@ class Scheduler:
                         if self._hedge_fund_short_pct <= 2.0:
                             extra_context = (
                                 f"你的空头仓位已经基本清完（剩余约{self._hedge_fund_short_pct:.0f}%）。\n"
-                                f"你现在是接近空仓状态。你需要决定：\n"
-                                f"- 建立新的多头仓位（如果你认为上涨趋势会持续）\n"
-                                f"- 重新建立空头仓位（如果你认为反弹结束了）\n"
-                                f"- 保持空仓观望\n"
+                                f"你现在是接近空仓状态。作为灵活的宏观对冲基金，你可以：\n"
+                                f"- 🟢 【反手做多】 (buy)：如果你认为市场已反转，这是赚取上涨收益的机会。\n"
+                                f"- 🔴 【重建空头】 (add_short)：如果你认为这只是死猫跳，反弹结束。\n"
+                                f"- ⚪ 【观望】 (hold)：看不清方向时。\n"
                                 f"注意：你不能再'平空头'了，因为已经没有空头可平。"
                             )
                         else:
                             extra_context = (
-                                f"你当前剩余空头仓位约{self._hedge_fund_short_pct:.0f}%。"
+                                f"你当前持有空头仓位约{self._hedge_fund_short_pct:.0f}%。\n"
+                                f"决策选项：\n"
+                                f"- 🟡 【平空止损/止盈】 (cover_short)：如果市场上涨威胁到你的仓位。\n"
+                                f"- 🟢 【反手做多】 (buy)：你可以一边平空，一边建立净多头（翻多）。\n"
+                                f"- 🔵 【加仓空头】 (add_short)：如果你确信市场还会跌。"
                             )
 
                     # 长线外资特殊context：根据市场环境和催化剂类型切换模式
@@ -414,6 +418,41 @@ class Scheduler:
             report_lines.append(f"- **预期反应顺序**: {expected.get('reaction_order', 'N/A')}")
             report_lines.append(f"- **预期退出顺序**: {expected.get('exit_order', 'N/A')}")
             report_lines.append(f"- **预期恒指轨迹**: {expected.get('hsi_trajectory', 'N/A')}")
+
+        # ── 5. 真实 vs 推演数据对比（新功能） ──
+        # 检查是否有真实数据
+        has_real_data = False
+        for day_log in self.log:
+            if day_log.get("event", {}).get("market_data", {}).get("hsi_close"):
+                has_real_data = True
+                break
+        
+        if has_real_data:
+            report_lines.append(f"\n## 五、真实 vs 推演数据对比\n")
+            report_lines.append("| 日期 | 真实恒指 | 推演恒指 | 偏差(点) | 偏差(%) |")
+            report_lines.append("|------|----------|----------|----------|---------|")
+            
+            total_abs_error_pct = 0
+            count = 0
+            
+            for day_log in self.log:
+                date = day_log["date"]
+                sim_hsi = day_log["market_state"]["hsi_close"]
+                real_hsi = day_log.get("event", {}).get("market_data", {}).get("hsi_close")
+                
+                if real_hsi:
+                    real_hsi = float(real_hsi)
+                    diff = sim_hsi - real_hsi
+                    diff_pct = (diff / real_hsi) * 100
+                    total_abs_error_pct += abs(diff_pct)
+                    count += 1
+                    report_lines.append(f"| {date} | {real_hsi:.0f} | {sim_hsi:.0f} | {diff:+.0f} | {diff_pct:+.2f}% |")
+                else:
+                    report_lines.append(f"| {date} | N/A | {sim_hsi:.0f} | - | - |")
+            
+            if count > 0:
+                avg_error = total_abs_error_pct / count
+                report_lines.append(f"\n**平均绝对偏差 (MAPE): {avg_error:.2f}%**")
 
         report_text = "\n".join(report_lines)
         report_file = reports_path / "simulation_report.md"

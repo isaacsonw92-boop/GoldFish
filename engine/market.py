@@ -8,12 +8,12 @@ import random
 import math
 
 
-# Agent资金权重 — 反映对恒指定价的真实影响力
+# Agent资金权重 — 反映港股现实（多头为主的市场）
 AGENT_WEIGHT = {
-    "HedgeFund":     0.25,  # 对冲基金：高杠杆，短期影响大
-    "LongOnly":      0.40,  # 长线外资：最大的定价权
-    "Southbound":    0.25,  # 南下资金：边际定价者
-    "ValueInvestor": 0.10,  # 价值投资者：交易频率低，影响小
+    "HedgeFund":     0.15,  # 对冲基金：资金量小，可多空
+    "LongOnly":      0.45,  # 长线外资：最大定价权，只能做多
+    "Southbound":    0.30,  # 南下资金：边际定价者，只能做多
+    "ValueInvestor": 0.10,  # 价值投资者：交易频率低，只能做多
 }
 
 # 行为→方向分数

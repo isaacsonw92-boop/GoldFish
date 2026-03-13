@@ -179,6 +179,15 @@ def run_simulation(scenario_path: str, output_dir: str = "output_crew_full"):
             if name_en == "hedge_fund" and memory.position.direction == "short":
                 hedge_fund_hint = "\n【提示】你当前持有空头仓位。你可以选择：cover_short（仅平空）或 buy（平空后反手做多建立多头）。\n"
 
+            # 根据Agent类型限制可用操作
+            if name_en == "hedge_fund":
+                available_actions = "buy/sell/hold/cover_short/add_short"
+                action_note = "注意：如果你当前是空头，用'buy'可以平空后反手做多。"
+            else:
+                # 其他Agent只能做多/持有，不能做空
+                available_actions = "buy/sell/hold"
+                action_note = "注意：你只能做多或持有，不能做空（add_short/cover_short不可用）。"
+
             prompt = f"""{role}
 
 {mem_context}{hedge_fund_hint}
@@ -189,10 +198,12 @@ def run_simulation(scenario_path: str, output_dir: str = "output_crew_full"):
 - 事件: {event.get('description', '无')[:100]}
 {dialogue_context}
 
-请做出今天的交易决策。
-输出JSON：{{"action": "buy/sell/hold/cover_short/add_short", "position_change_pct": 0-100, "reasoning": "...", "emotion": "calm/anxiety/fomo/greed/fear/panic", "confidence": 0-1}}
+## 可用操作
+{available_actions}
+{action_note}
 
-注意：如果你当前是空头（short），用"buy"可以平掉空头并建立多头（反手做多）。
+请做出今天的交易决策。
+输出JSON：{{"action": "...", "position_change_pct": 0-100, "reasoning": "...", "emotion": "calm/anxiety/fomo/greed/fear/panic", "confidence": 0-1}}
 """
             try:
                 response = client.chat.completions.create(

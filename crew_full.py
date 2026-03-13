@@ -174,9 +174,14 @@ def run_simulation(scenario_path: str, output_dir: str = "output_crew_full"):
 
             mem_context = memory.to_prompt_context(lookback=3)
 
+            # 对冲基金特殊提示：如果当前是空头，可以反手做多
+            hedge_fund_hint = ""
+            if name_en == "hedge_fund" and memory.position.direction == "short":
+                hedge_fund_hint = "\n【提示】你当前持有空头仓位。你可以选择：cover_short（仅平空）或 buy（平空后反手做多建立多头）。\n"
+
             prompt = f"""{role}
 
-{mem_context}
+{mem_context}{hedge_fund_hint}
 
 ## 今日市场
 - 恒指: {market_state['hsi_close']} ({change:+.1f}%)
@@ -186,6 +191,8 @@ def run_simulation(scenario_path: str, output_dir: str = "output_crew_full"):
 
 请做出今天的交易决策。
 输出JSON：{{"action": "buy/sell/hold/cover_short/add_short", "position_change_pct": 0-100, "reasoning": "...", "emotion": "calm/anxiety/fomo/greed/fear/panic", "confidence": 0-1}}
+
+注意：如果你当前是空头（short），用"buy"可以平掉空头并建立多头（反手做多）。
 """
             try:
                 response = client.chat.completions.create(
